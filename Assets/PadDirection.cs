@@ -16,7 +16,8 @@ public class PadDirection : MonoBehaviour, IPointerDownHandler, IPointerUpHandle
 
     public Vector2 direction;
 
-    private bool isTouch = false;
+    public bool isTouch = false;
+
 
 
     void Start()
@@ -54,7 +55,6 @@ public class PadDirection : MonoBehaviour, IPointerDownHandler, IPointerUpHandle
         rect_Joystick.localPosition = value;
 
         position = value.normalized;
-
 
 
     }

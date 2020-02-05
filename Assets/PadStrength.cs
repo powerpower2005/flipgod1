@@ -12,7 +12,9 @@ public class PadStrength : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     public bool isJumped { get; set; }
     public int strength_time { get; set; }
     public int addStrength = 3;
-    
+
+
+
     void Start()
     {
     }
@@ -20,6 +22,7 @@ public class PadStrength : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 
     void Update()
     {
+
         if (isTouch)
         {
             strength_time += addStrength;
